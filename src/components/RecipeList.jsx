@@ -4,7 +4,7 @@ import { RecipeContext } from './App';
 import '../css/RecipeList.css';
 
 const RecipeList = ({ recipes }) => {
-  const { addRecipe } = useContext(RecipeContext);
+  const recipeCtx = useContext(RecipeContext);
   return (
     <div className='recipe-list'>
       <div className='recipe-list__recipes'>
@@ -13,7 +13,10 @@ const RecipeList = ({ recipes }) => {
         })}
       </div>
       <div className='recipe-list__add-btn-recipe-container'>
-        <button className='btn btn--primary btn--large' onClick={addRecipe}>
+        <button
+          className='btn btn--primary btn--large'
+          onClick={recipeCtx.addRecipe}
+        >
           Add Recipe
         </button>
       </div>

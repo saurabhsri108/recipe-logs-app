@@ -10,16 +10,21 @@ const Recipe = ({
   instructions,
   ingredients,
 }) => {
-  const { deleteRecipe } = useContext(RecipeContext);
+  const recipeCtx = useContext(RecipeContext);
   return (
     <div className='recipe'>
       <div className='recipe__header'>
         <h3 className='recipe__title'>{name}</h3>
-        <div className="btn-action-group">
-          <button className='btn btn--success'>Edit</button>
+        <div className='btn-action-group'>
+          <button
+            className='btn btn--success'
+            onClick={() => recipeCtx.editRecipe(id)}
+          >
+            Edit
+          </button>
           <button
             className='btn btn--danger'
-            onClick={() => deleteRecipe(id)}
+            onClick={() => recipeCtx.deleteRecipe(id)}
           >
             Delete
           </button>
