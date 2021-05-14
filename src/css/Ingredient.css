@@ -1,0 +1,7 @@
+.ingredient-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 0.625rem;
+  column-gap: 2.5rem;
+  justify-content: flex-start;
+}
