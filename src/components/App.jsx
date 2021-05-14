@@ -2,6 +2,7 @@ import React, { useState, useEffect, createContext } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import RecipeList from './RecipeList';
 import '../css/App.css';
+import RecipeForm from './RecipeForm';
 
 export const RecipeContext = createContext();
 
@@ -71,7 +72,9 @@ const App = () => {
       <div className='container__recipe'>
         <RecipeList recipes={recipes} />
       </div>
-      <div className='container__recipe-edit'>Recipe Edit Form</div>
+      <div className='container__recipe-edit'>
+        <RecipeForm />
+      </div>
     </RecipeContext.Provider>
   );
 };

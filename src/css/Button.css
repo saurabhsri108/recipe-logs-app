@@ -49,3 +49,15 @@
 .mr-1 {
   margin-left: 0.4rem;
 }
+
+.btn-action-group {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 0.675rem;
+}
+
+.btn-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}

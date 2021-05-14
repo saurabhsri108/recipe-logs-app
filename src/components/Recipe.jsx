@@ -15,10 +15,10 @@ const Recipe = ({
     <div className='recipe'>
       <div className='recipe__header'>
         <h3 className='recipe__title'>{name}</h3>
-        <div>
+        <div className="btn-action-group">
           <button className='btn btn--success'>Edit</button>
           <button
-            className='btn btn--danger mr-1'
+            className='btn btn--danger'
             onClick={() => deleteRecipe(id)}
           >
             Delete

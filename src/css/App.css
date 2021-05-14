@@ -4,6 +4,7 @@
 @import url('./Recipe.css');
 @import url('./Button.css');
 @import url('./Ingredient.css');
+@import url('./RecipeForm.css');
 
 *,
 *::before,
@@ -13,15 +14,15 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   font-size: 1.125rem;
-}
+} */
 
-@media (min-width: 728px) {
+/* @media (min-width: 928px) {
   html {
     font-size: 1.5rem;
   }
-}
+} */
 
 body {
   padding: 0;
@@ -33,11 +34,12 @@ body {
   min-width: 100vw;
 }
 
-@media (min-width: 728px) {
+@media (min-width: 928px) {
   .container__recipe {
     border-top: none;
     border-right: 2px solid black;
-    min-width: 100vh;
+    min-height: 100vh;
+    min-width: 50%;
     width: 50%;
   }
 

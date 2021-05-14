@@ -1,7 +1,6 @@
 .recipe {
   border-bottom: 2px solid #777;
   padding: 1.25rem;
-  padding-bottom: 2.5rem;
   background: linear-gradient(rgb(249, 237, 218, 0.3), rgba(241, 154, 13, 0.3));
 }
 
@@ -23,10 +22,13 @@
 
 .recipe__label {
   margin-right: 0.3125rem;
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 
 .recipe__value {
   font-weight: 300;
+  font-size: 1.125rem;
 }
 
 .recipe__value--intended {
