@@ -1,5 +1,6 @@
 {
   "name": "react-webdevsimplified",
+  "homepage": "https://vasudeveloper001.github.io/react-recipes/",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
