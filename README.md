@@ -3,4 +3,4 @@ Follow up of Web Dev Simplified React App
 
 ## Live App
 
-[Recipe Logs App](https://vasudeveloper001.github.io/recipe-logs-app/)
+[Recipe Logs App](https://saurabh-recipe-logs.netlify.app/)
